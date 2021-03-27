@@ -19,4 +19,5 @@ The workflow is coded using MATLAB and uses an image based post-processing appro
 #### Smooth and crisp geometry
 <img width="600px" height="200px" src="/mbb_smooth.png">
 
-
+#### Extracted curves
+<img width="600px" height="200px" src="/mbb_curves.png">
