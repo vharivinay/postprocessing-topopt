@@ -12,9 +12,9 @@ The workflow is coded using MATLAB and uses an image based post-processing appro
 
 ### What this code does
 #### Unsmooth topology optimized design
-<img width="600px" height="200px" src="/mbb_smooth.png">
+<img width="600px" height="200px" src="/mbb_unsmooth.png">
 
 #### Smooth and crisp geometry
-<img width="600px" height="200px" src="/mbb_unsmooth.png">
+<img width="600px" height="200px" src="/mbb_smooth.png">
 
 
