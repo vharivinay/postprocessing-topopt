@@ -11,6 +11,10 @@ The work done in this thesis deals with the post-processing of the results obtai
 The workflow is coded using MATLAB and uses an image based post-processing approach. The proposed workflow is tested on several numerical examples to assess the performance, limitations and numerical instabilities.
 
 ### What this code does
+#### Unsmooth topology optimized design
+<img width="600px" height="200px" src="/mbb_smooth.png">
 
+#### Smooth and crisp geometry
+<img width="600px" height="200px" src="/mbb_unsmooth.png">
 
 
