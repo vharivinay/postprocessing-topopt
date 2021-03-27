@@ -25,4 +25,4 @@ The workflow is coded using MATLAB and uses an image based post-processing appro
 <img width="600px" height="200px" src="/mbb_curves.png">
 
 #### Extruded 3D Geometry
-<img width="700px" height="300px" src="/mbb_3dgeom.png">
+<img width="600px" height="350px" src="/mbb_3dgeom.png">
