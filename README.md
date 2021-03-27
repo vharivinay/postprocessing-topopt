@@ -5,6 +5,8 @@ Paper: [Efficient topology optimization in MATLAB using 88 lines of code](https:
 
 Original TO solver: [top88.m](https://www.topopt.mek.dtu.dk/Apps-and-software/Efficient-topology-optimization-in-MATLAB)
 
+Thesis published at: []
+
 ### Abstract
 Topology optimization has seen rapid developments in it's field with algorithms getting better and faster all the time. These new algorithms help reduce the lead time from concept development to a finished product. Simulation and post-processing of geometry is one of the major developmental costs. Post-processing of this geometry also takes up a lot of time and is dependent of the quality of the geometry output from the solver to make the product ready for rapid prototyping or final production. 
 
@@ -21,3 +23,6 @@ The workflow is coded using MATLAB and uses an image based post-processing appro
 
 #### Extracted curves
 <img width="600px" height="200px" src="/mbb_curves.png">
+
+#### Extruded 3D Geometry
+<img width="600px" height="200px" src="/mbb_final_3dimage.jpg>
