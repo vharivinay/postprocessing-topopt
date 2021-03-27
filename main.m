@@ -11,7 +11,7 @@ addpath('/data/Thesis/Repo/Current_Working_Directory/Parent/thesis_func');
 % 'multiload_cantilever','plate_w_hole_endload','plate_w_hole_midload',
 % 'l-beam','t-beam','t-beam_w_hole'
 % =======================================================================
-specimen = 't-beam_w_hole';
+specimen = 'MBB';
 ft=3; % Filtering Method 1 = sensitivity,2 = desnity or 3 = heaviside
 sf = 1.0; % Scaling Factor for dimensions [RECOMMENDED: INTEGERS]
 %========================================================================
