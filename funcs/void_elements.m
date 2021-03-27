@@ -39,5 +39,18 @@ function passive = void_elements(nelx,nely,specimen)
                     end
                 end
             end
+        case 'c-bracket'
+            passive = zeros(nely,nelx);
+            for i = 1:nelx
+                for j = 1:nely
+                    if i > (0.5*nelx)
+                        if j > (0.4*nely)
+                            if j < (0.6*nely)
+                                passive(j,i) = 1;
+                            end
+                        end
+                    end
+                end
+            end
     end
 end

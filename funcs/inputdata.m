@@ -47,6 +47,12 @@ switch specimen
         volfrac=0.25;
         penal=3;
         rmin=0.03*nelx;
+    case 'c-bracket'
+        nelx = 100*sf;
+        nely = 100*sf;
+        volfrac=0.4;
+        penal=3;
+        rmin=0.03*nelx;
     otherwise
-        error('inputdata:specimenNotFound',"\nAllowed Inputs are:\n'MBB','half-wheel','short_cantilever_endload','short_cantilever_midload','multiload_cantilever'\n'plate_w_hole_endlaod','plate_w_hole_midlaod','l-beam','t-beam',\n't-beam_w_hole'")
+        error('inputdata:specimenNotFound',"\nAllowed Inputs are:\n'MBB','half-wheel','short_cantilever_endload','short_cantilever_midload','multiload_cantilever'\n'plate_w_hole_endlaod','plate_w_hole_midlaod','l-beam','t-beam',\n't-beam_w_hole','c-bracket'")
 end

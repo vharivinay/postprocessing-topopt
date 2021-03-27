@@ -4,6 +4,7 @@ windowWidth = 45;
 polynomialOrder = po;
 
 binaryData = I;
+%th = graythresh(binaryData);
 binaryData = imresize(binaryData,[nely*nG nelx*nG]);
 [rows,columns]=size(binaryData);
 labeledData = bwlabel(binaryData,8);
@@ -60,10 +61,10 @@ for j = 1 : cellsize
     end
     % Reduce Point Density---------------------------------------------
     p = [smoothX,smoothY];
-    tol = 0.75;
-    [ps] = dpsimplify(p,tol);
-%     eps = 0.60;
-%     [ps] = rdp(p,eps);
+%     tol = 0.75;
+%     [ps] = dpsimplify(p,tol);
+    eps = 0.75;
+    [ps] = rdp(p,eps);
     
     ps(end,:) = ps(1,:);       
         
@@ -76,6 +77,8 @@ for j = 1 : cellsize
     hold on;
 end
 hold off;
+% caption = sprintf('Outlines of smooth geometry');
+% title({caption,' '});
 axis off;
 
 cell_smooth_transposed = cell_smooth';

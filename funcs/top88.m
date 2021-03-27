@@ -1,7 +1,4 @@
 %% %% AN 88 LINE TOPOLOGY OPTIMIZATION CODE Nov, 2010 %% %%
-%% %% Modified by Harivinay V and Sharath Chandra GV, Feb, 2021
-%% %%
-
 function [xPhys,c,beta,vMS] = top88(nelx,nely,volfrac,penal,rmin,ft,specimen)
 %% MATERIAL PROPERTIES
 E0 = 1;

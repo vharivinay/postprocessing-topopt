@@ -1,0 +1,41 @@
+% function Ut = plot_displacements(U,nelx,nely,density)
+%     U1 = U_smooth; nelx1 = nelx*nG; nely1= nely*nG;
+    Uy = U(1:2:end);
+    Ux = U(2:2:end);
+    Ut = Ux.^2+Uy.^2; Ut = sqrt(Ut);
+    Ut = reshape(Ut,nely+1,nelx+1);
+    Uf = mat2gray(Ut);
+    Uf = imresize(Uf,[nely nelx]);
+%     densmap=not(dens); 
+%     densmap = double(1-densmap);
+%     Uf = Uf.*densmap;
+    Uf(dens(:)==0) = 0;
+%     Ut = (Ut - min(Ut))./(max(Ut)-min(Ut));
+    ax2 = subplot(1,1,1);
+    colormap;imagesc(Uf); caxis([0 1]);
+    caption2 = sprintf('Diaplacement Profile');
+    title({caption2,' '});
+    axis equal off;
+    colormap(ax2,jet);colorbar;drawnow;
+% end
+    myColorMap = jet(256);
+    myColorMap(1,:) = 1;
+
+    U1 = U_smooth; nelx1 = nelx*nG; nely1= nely*nG;
+    Uy = U1(1:2:end);
+    Ux = U1(2:2:end);
+    Ut = Ux.^2+Uy.^2; Ut = sqrt(Ut);
+    Ut = reshape(Ut,nely1+1,nelx1+1);
+    Uf = mat2gray(Ut);
+%     Uf = imresize(Uf,[nely1 nelx1]);
+%     densmap=not(prho); 
+%     densmap = double(1-densmap);
+%     Uf = Uf.*densmap;
+    Uf((prho(:))<0) = 0;
+%     Ut = (Ut - min(Ut))./(max(Ut)-min(Ut));
+    ax2 = subplot(1,1,1);
+    colormap;imagesc(Uf); caxis([0 1]);
+    caption2 = sprintf('Diaplacement Profile');
+    title({caption2,' '});
+    axis equal off;
+    colormap(ax2,myColorMap);colorbar;drawnow;

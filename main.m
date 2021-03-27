@@ -1,9 +1,9 @@
-%% MAIN CODE STRUCTURAL DESIGN OPTIMIZATION
+%% COMBINING VENILLA TOP_88 CODE WITH MODS TO GET DATA AND FILE
 tic;
 set(0,'DefaultAxesColor','none');
 
 %% ADD PATH TO FUNCTIONS
-addpath('/home/harivinay/Desktop/Results/report_code/thesis_func');
+addpath('/data/Thesis/Repo/Current_Working_Directory/Parent/thesis_func');
 %% CODE START -- INPUTS
 % Type of Specimen: Allowed specimens are
 % =======================================================================
@@ -11,7 +11,7 @@ addpath('/home/harivinay/Desktop/Results/report_code/thesis_func');
 % 'multiload_cantilever','plate_w_hole_endload','plate_w_hole_midload',
 % 'l-beam','t-beam','t-beam_w_hole'
 % =======================================================================
-specimen = 'MBB';
+specimen = 't-beam_w_hole';
 ft=3; % Filtering Method 1 = sensitivity,2 = desnity or 3 = heaviside
 sf = 1.0; % Scaling Factor for dimensions [RECOMMENDED: INTEGERS]
 %========================================================================
