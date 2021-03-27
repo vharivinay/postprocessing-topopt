@@ -61,8 +61,7 @@ for j = 1 : cellsize
     end
     % Reduce Point Density---------------------------------------------
     p = [smoothX,smoothY];
-%     tol = 0.75;
-%     [ps] = dpsimplify(p,tol);
+    
     eps = 0.75;
     [ps] = rdp(p,eps);
     

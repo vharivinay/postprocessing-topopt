@@ -45,11 +45,5 @@ function [F,U,fixeddofs] = boundary_conditions(nelx,nely,specimen)
                 [1 2],[-1 -1],2*(nely+1)*(nelx+1),2);
             U = zeros(2*(nely+1)*(nelx+1),2);
             fixeddofs = union([2*(nely+1)*(0:nelx)+1], [2*(nely+1)*(0:nelx)+2]);
-        case 'c-bracket'
-            F = sparse([(2*(nely+1)*(nelx+1)-(0.62*(2*(nely)))),...
-                (2*(nely+1)*(nelx+1)-(0.4*(2*(nely))))],[1 2],[1 -1],2*(nely+1)*(nelx+1),2);
-            U = zeros(2*(nely+1)*(nelx+1),2);
-            fixeddofs = union([(nely+2)],...
-                [(2*0.5*(nely+1)*(nelx+1):1:2*0.5*(nely+1)*(nelx+1)+1)]);
      end
 end
