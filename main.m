@@ -1,4 +1,10 @@
 %% COMBINING VENILLA TOP_88 CODE WITH MODS TO GET DATA AND FILE
+%% Master Thesis, Linkoping University, March 2021 %%
+%% Validation of Black-and-White TopologyOptimization Designs
+%% Authors: Harivinay Varadaraju
+%%          Sharath Chandra Garla Venkatakrishnaiah
+%% Link: github.com/M87K452b
+
 tic;
 set(0,'DefaultAxesColor','none');
 
