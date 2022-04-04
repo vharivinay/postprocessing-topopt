@@ -7,6 +7,12 @@ Original TO solver: [top88.m](https://www.topopt.mek.dtu.dk/Apps-and-software/Ef
 
 Thesis Link: [Validation of Black-and-White Topology Optimization Designs](http://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A1541843&dswid=-6251)
 
+---
+
+> ## [Check out this short blog post I wrote to get some insight into the how this works](https://vharivinay.github.io/simulations/topotp/)
+
+---
+
 ### Abstract
 Topology optimization has seen rapid developments in it's field with algorithms getting better and faster all the time. These new algorithms help reduce the lead time from concept development to a finished product. Simulation and post-processing of geometry is one of the major developmental costs. Post-processing of this geometry also takes up a lot of time and is dependent of the quality of the geometry output from the solver to make the product ready for rapid prototyping or final production. 
 
